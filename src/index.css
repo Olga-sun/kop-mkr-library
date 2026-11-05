@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  background: #f6f5f2;
+  color: #222;
+}
+a { color: #1d5fa8; }
+button {
+  padding: 6px 14px;
+  border: 1px solid #1d5fa8;
+  border-radius: 6px;
+  background: #1d5fa8;
+  color: #fff;
+  cursor: pointer;
+}
+button:disabled { background: #bbb; border-color: #bbb; cursor: not-allowed; }
+input, select, textarea {
+  padding: 6px 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font: inherit;
+}
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.header {
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: center;
+  padding: 12px 24px; background: #fff; border-bottom: 1px solid #ddd;
+}
+.logo { font-weight: 700; font-size: 1.2rem; text-decoration: none; color: #222; }
+.nav { display: flex; flex-wrap: wrap; gap: 6px; }
+.nav a { padding: 6px 10px; border-radius: 6px; text-decoration: none; }
+.nav a.active { background: #1d5fa8; color: #fff; }
+.content { flex: 1; width: 100%; max-width: 960px; margin: 0 auto; padding: 24px; }
+.footer { padding: 12px 24px; font-size: 0.85rem; color: #777; text-align: center; }
+.status { padding: 24px; }
+.muted { color: #777; }
+.available { color: #2a7a2a; }
+.unavailable { color: #999; }
+.error { display: block; color: #c0392b; font-size: 0.9rem; }
+.stats { font-size: 1.1rem; line-height: 1.8; }
+.quote { margin-top: 24px; padding: 16px; background: #fff; border-radius: 8px; }
+.quote blockquote { margin: 0; font-style: italic; min-height: 3em; }
+.dots { display: flex; gap: 6px; margin-top: 8px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #ccc; }
+.dot.active { background: #1d5fa8; }
+.filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 16px; }
+.filters input[type='search'] { flex: 1 1 240px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+.card { padding: 12px 16px; background: #fff; border-radius: 8px; border: 1px solid #e3e3e3; }
+.card h3 { margin: 0 0 4px; }
+.card p { margin: 4px 0; }
+.actions { display: flex; gap: 12px; align-items: center; margin: 12px 0; }
+.form { display: flex; flex-direction: column; gap: 12px; max-width: 480px; }
+.form label { display: flex; flex-direction: column; gap: 4px; }
+.my-list li { margin-bottom: 8px; }
+.my-list button { margin-left: 12px; }
